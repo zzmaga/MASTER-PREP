@@ -1,4 +1,11 @@
 package master.prep.dto.program;
 
-public class ProgramResponseDto {
+import java.util.UUID;
+
+public record ProgramResponseDto(
+        UUID id,
+        String code,
+        String title,
+        String description
+) {
 }
