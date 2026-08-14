@@ -9,6 +9,4 @@ import java.util.UUID;
 
 public interface ProgramRepository extends JpaRepository<Program, UUID> {
     boolean existsByCode(String code);
-
-    List<ProgramResponseDto> getAll();
 }
